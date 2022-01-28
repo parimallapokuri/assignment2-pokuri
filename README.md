@@ -1,2 +1,5 @@
 # assignment2-pokuri
-Lab 2 repo
+#Parimalla Pokuri
+####### Hyderabad is famous for my fav food which is Biryani
+We have so many historical places in hyderabad. Charminar, Birla mandir, museums are located there and so many famous temples like Chilukuri **balaji** temple, peddamma thalli gudi are located in **Hyderabad**.
+
