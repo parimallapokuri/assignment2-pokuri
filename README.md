@@ -34,3 +34,15 @@ I'll recommond these food items to others from my location
     * Muglai Biryani
     * Veg Biryani
 [Click here to know about me](https://github.com/parimallapokuri/assignment2-pokuri/blob/main/AboutMe.md)
+
+---
+
+# About Sports
+I would like recommond the following sports which I like most are Badminton, Cricket, Football, valley Ball.
+| Sport name |  Location  | Payable Amount |
+| ---------- | ---------- | -------------- |
+| Badminton  | Hyderabad  |   $10          |
+| Cricket    | Guntur     |   $40          |
+| Football   | Vijayawada |   $30          |
+| valley Ball| Ongole     |   $20          |
+
