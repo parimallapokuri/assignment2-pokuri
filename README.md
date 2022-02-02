@@ -47,3 +47,11 @@ I would like recommond the following sports which I like most are Badminton, Cri
 | Football   | Vijayawada |   $30          |
 | valley Ball| Ongole     |   $20          |
 
+---
+
+# pithy Quotes
+
+> 1. Good, better, best. Never let it rest. 'Til your good is better and your better is best'.
+Author: *St. Jerome*
+> 2. Don't watch the clock; do what it does. Keep going.
+Author: *Sam Levenson*
