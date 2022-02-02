@@ -34,4 +34,4 @@ I'll recommond these food items to others from my location
     * Muglai Biryani
     * Veg Biryani
 
-[Click here to know about me](https://github.com/s546647/assignment2-pokuri/blob/main/AboutMe.md)
+[Click here to know about me](https://github.com/parimallapokuri/assignment2-pokuri/blob/main/AboutMe.md)
