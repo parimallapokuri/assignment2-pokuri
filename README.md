@@ -49,7 +49,7 @@ I would like recommond the following sports which I like most are Badminton, Cri
 
 ---
 
-# pithy Quotes
+# Pithy Quotes
 
 > 1. Good, better, best. Never let it rest. 'Til your good is better and your better is best'.
 Author: *St. Jerome*
