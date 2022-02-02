@@ -55,3 +55,47 @@ I would like recommond the following sports which I like most are Badminton, Cri
 Author: *St. Jerome*
 > 2. Don't watch the clock; do what it does. Keep going.
 Author: *Sam Levenson*
+
+---
+
+# Dynamic Programming, Linear Algebra and Numerical Methods
+###### Dynamic Programming from another source
+>Dynamic Programming (commonly referred to as DP) is an algorithmic technique for solving a problem by recursively breaking it down into simpler subproblems and using the fact that the optimal solution to the overall problem depends upon the optimal solution to it’s individual subproblems.
+
+Go to the source of Dynamic Programming <https://www.interviewbit.com/courses/programming/topics/dynamic-programming/#:~:text=Dynamic%20Programming%20(commonly%20referred%20to,solution%20to%20it's%20individual%20subproblems.>
+
+###### Linear Algebra from another source
+>Linear algebra is central to almost all areas of mathematics. For instance, linear algebra is fundamental in modern presentations of geometry, including for defining basic objects such as lines, planes and rotations. Also, functional analysis, a branch of mathematical analysis, may be viewed as the application of linear algebra to spaces of functions.
+
+ About Linear Algebra go to <https://en.wikipedia.org/wiki/Linear_algebra>
+
+###### Numerical Methods from another source
+>Numerical method is the approach of solving mathematical or physical equations using computers. This is done by converting differential equations defined in continuous space and time to a large system of equations in discretized domain.
+
+To know more about Numerical Methods go to <https://www.sciencedirect.com/topics/engineering/numerical-method#:~:text=Numerical%20method%20is%20the%20approach,of%20equations%20in%20discretized%20domain.>
+
+###### Dynamic Programming from CP-Algorithms 
+* Dynamic Programming
+    * DP optimizations
+        * Divide and Conquer DP
+    * Tasks
+        * Dynamic Programming on Broken Profile. Problem "Parquet"
+        * Finding the largest zero submatrix
+
+###### Linear Algebra from CP-Algorithms 
+* Linear Algebra
+    * Matrices
+        * Gauss & System of Linear Equations
+        * Gauss & Determinant
+        * Kraut & Determinant
+        * Rank of a matrix
+
+###### Numerical Methods from CP-Algorithms
+* Numerical Methods
+    * Search
+        * Ternary Search
+        * Newton's method for finding roots
+    * Integration
+        * Integration by Simpson's formula
+
+Quick link for source code <https://cp-algorithms.com/index.html>
