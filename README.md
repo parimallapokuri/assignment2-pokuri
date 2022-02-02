@@ -58,44 +58,48 @@ Author: *Sam Levenson*
 
 ---
 
-# Dynamic Programming, Linear Algebra and Numerical Methods
-###### Dynamic Programming from another source
+# Dynamic Programming
+###### Dynamic Programming from other source 
 >Dynamic Programming (commonly referred to as DP) is an algorithmic technique for solving a problem by recursively breaking it down into simpler subproblems and using the fact that the optimal solution to the overall problem depends upon the optimal solution to it’s individual subproblems.
 
 Go to the source of Dynamic Programming -> <https://www.interviewbit.com/courses/programming/topics/dynamic-programming/#:~:text=Dynamic%20Programming%20(commonly%20referred%20to,solution%20to%20it's%20individual%20subproblems.>
 
-###### Linear Algebra from another source
->Linear algebra is central to almost all areas of mathematics. For instance, linear algebra is fundamental in modern presentations of geometry, including for defining basic objects such as lines, planes and rotations. Also, functional analysis, a branch of mathematical analysis, may be viewed as the application of linear algebra to spaces of functions.
-
- About Linear Algebra go to -> <https://en.wikipedia.org/wiki/Linear_algebra>
-
-###### Numerical Methods from another source
->Numerical method is the approach of solving mathematical or physical equations using computers. This is done by converting differential equations defined in continuous space and time to a large system of equations in discretized domain.
-
-To know more about Numerical Methods go to -> <https://www.sciencedirect.com/topics/engineering/numerical-method#:~:text=Numerical%20method%20is%20the%20approach,of%20equations%20in%20discretized%20domain.>
-
 ###### Dynamic Programming from CP-Algorithms 
-* Dynamic Programming
-    * DP optimizations
-        * Divide and Conquer DP
-    * Tasks
-        * Dynamic Programming on Broken Profile. Problem "Parquet"
-        * Finding the largest zero submatrix
 
-###### Linear Algebra from CP-Algorithms 
-* Linear Algebra
-    * Matrices
-        * Gauss & System of Linear Equations
-        * Gauss & Determinant
-        * Kraut & Determinant
-        * Rank of a matrix
+int m, n;
+vector<long long> dp_before(n), dp_cur(n);
 
-###### Numerical Methods from CP-Algorithms
-* Numerical Methods
-    * Search
-        * Ternary Search
-        * Newton's method for finding roots
-    * Integration
-        * Integration by Simpson's formula
+long long C(int i, int j);
 
-Quick link for source code -> <https://cp-algorithms.com/index.html>
+// compute dp_cur[l], ... dp_cur[r] (inclusive)
+void compute(int l, int r, int optl, int optr) {
+    if (l > r)
+        return;
+
+    int mid = (l + r) >> 1;
+    pair<long long, int> best = {LLONG_MAX, -1};
+
+    for (int k = optl; k <= min(mid, optr); k++) {
+        best = min(best, {(k ? dp_before[k - 1] : 0) + C(k, mid), k});
+    }
+
+    dp_cur[mid] = best.first;
+    int opt = best.second;
+
+    compute(l, mid - 1, optl, opt);
+    compute(mid + 1, r, opt, optr);
+}
+
+int solve() {
+    for (int i = 0; i < n; i++)
+        dp_before[i] = C(0, i);
+
+    for (int i = 1; i < m; i++) {
+        compute(0, n - 1, 0, n - 1);
+        dp_before = dp_cur;
+    }
+
+    return dp_before[n - 1];
+}
+
+Quick link for source code -> <https://cp-algorithms.com/dynamic_programming/divide-and-conquer-dp.html>
