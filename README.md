@@ -65,7 +65,7 @@ Author: *Sam Levenson*
 Go to the source of Dynamic Programming -> <https://www.interviewbit.com/courses/programming/topics/dynamic-programming/#:~:text=Dynamic%20Programming%20(commonly%20referred%20to,solution%20to%20it's%20individual%20subproblems.>
 
 ###### Dynamic Programming from CP-Algorithms 
-
+```
 int m, n;
 vector<long long> dp_before(n), dp_cur(n);
 
@@ -101,5 +101,6 @@ int solve() {
 
     return dp_before[n - 1];
 }
+```
 
 Quick link for source code -> <https://cp-algorithms.com/dynamic_programming/divide-and-conquer-dp.html>
